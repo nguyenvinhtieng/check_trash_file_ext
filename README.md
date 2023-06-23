@@ -1,65 +1,24 @@
-# check-unuse-file- README
+# Check Unuse File
 
-This is the README for your extension "check-unuse-file-". After writing up a brief description, we recommend including the following sections.
+## Description
+This extension helps you check and generate a list of trash files in a specified folder.
 
-## Features
+## Usage
+1. Press `Ctrl + P` to open the command palette.
+2. Choose the desired workspace if you have multiple workspaces open. This step ensures that the extension operates within the correct workspace.
+3. In the input field of the command palette, enter the folder path you want to check for trash files. The folder path should be relative to the workspace root or an absolute path.
+    - Example: If you want to check the `src` folder located in the workspace root, enter `src` as the folder path.
+4. Enter the root path of your project. This step helps the extension determine the relative paths of the trash files found.
+    - The root path should be the common parent directory of the specified folder and the files in your project. It ensures that the generated paths in the list are relative and accurate.
+    - Example: If the specified folder is `src` and your project files are located in `project-root/src`, enter `project-root` as the root path.
+5. Wait for the checking process to complete. The extension will scan the specified folder and its subdirectories to identify trash files based on the specified file types (.png, .jpg, .jpeg, .gif, .svg, .ico).
+    - During the process, you will see a progress indicator to track the scanning progress.
+6. Once the checking process is complete, the extension will generate a file called `trash_file.txt`. This file will be placed in the specified folder.
+    - `trash_file.txt` contains a list of the trash files found in the specified folder and its subdirectories.
+    - Each file path is relative to the specified folder, making it easier to locate and manage the trash files.
+    - Example: If a trash file `image.png` is found in the `src/images` folder, the corresponding entry in `trash_file.txt` will be `images/image.png`.
+7. You can now check the generated `trash_file.txt` in the specified folder. It provides you with a comprehensive list of trash files to help you manage and remove them from your project.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Please note that this extension operates only on the specified file types (.png, .jpg, .jpeg, .gif, .svg, .ico) within the specified folder and its subdirectories. Any files that match the specified file types and are no longer used or required in your project are considered trash files.
 
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+If you encounter any issues or have suggestions, please feel free to provide feedback or report them on the extension's [GitHub repository](https://github.com/nguyenvinhtieng/get_a_basic_app_vscode_extension). Your feedback helps us improve the extension and provide a better experience for all users.

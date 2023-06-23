@@ -6,6 +6,12 @@
   "engines": {
     "vscode": "^1.79.0"
   },
+  "publisher": "NguyenVinhTieng",
+  "repository": {
+		"type": "git",
+		"url": "https://github.com/nguyenvinhtieng/check_trash_file_ext.git"
+	},
+	"icon": "logo.png",
   "categories": [
     "Other"
   ],
