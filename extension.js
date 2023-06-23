@@ -224,8 +224,8 @@ async function chooseCheckingFolderAndRootFolder(folder) {
 }
 
 function activate(context) {
-	console.log('Congratulations, your extension "check-unuse-file-" is now active!');
-	let disposable = vscode.commands.registerCommand('check-unuse-file-.check_unuse_file', async function () {
+	console.log('Congratulations, your extension "check-unuse-file" is now active!');
+	let disposable = vscode.commands.registerCommand('check-unuse-file.check_unuse_file', async function () {
 		vscode.window.showInformationMessage('Hello World from check unuse file !');
 		const workspaceFolders = vscode.workspace.workspaceFolders;
 		let arrayWorkspaceFolders = [];

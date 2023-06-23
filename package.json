@@ -1,5 +1,5 @@
 {
-  "name": "check-unuse-file-",
+  "name": "check-unuse-file",
   "displayName": "check unuse file ",
   "description": "",
   "version": "0.0.1",
@@ -15,11 +15,13 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onCommand:check-unuse-file.check_unuse_file"
+  ],
   "main": "./extension.js",
   "contributes": {
     "commands": [{
-      "command": "check-unuse-file-.check_unuse_file",
+      "command": "check-unuse-file.check_unuse_file",
       "title": "Check Unuse File"
     }]
   },
