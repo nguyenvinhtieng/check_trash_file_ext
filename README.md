@@ -8,10 +8,10 @@ This extension helps you check and generate a list of trash files in a specified
 # Vietnamese ver
 1. Cài đặt extention này ^^
 2. Tại VsCode, Nhấn Ctrl + P để mở hộp công cụ lệnh.
-3. Nhập `>Check Unuse File` và nhấn Enter.
+3. Nhập `>Check Unuse File` và nhấn Enter `nhớ có dấu >`.
 3. Chọn thư mục muốn kiểm tra file rác(Trong trường hợp vs code đang mở nhiều thư mục), Trong trường hợp chỉ có 1 thư mục thì vui lòng bỏ qua bước này.
-4. Nhập đường dẫn folder muốn kiểm tra file rác.
-5. Nhập Root path (Để kiểm tra trong trường hợp các link thuộc dạng ex: /asset/images/test.png).
+4. Nhập đường dẫn folder muốn kiểm tra file rác, nếu muốn chọn thư mục hiện tại để check luôn thì nhấn Enter.
+5. Nhập Root path (Để kiểm tra trong trường hợp các link thuộc dạng /asset/images/test.png), nếu muốn chọn thư mục hiện tại làm root path luôn thì nhấn Enter.
 6. Chờ quá trình kiểm tra hoàn tất.
 7. Mở file trash_file.txt tại thư mục kiểm tra file rác. Tại đây chứa danh sách các tệp rác được tìm thấy trong thư mục đã chỉ định và các thư mục con của nó.
 Mỗi đường dẫn tệp là tương đối đối với thư mục đã chỉ định, giúp bạn dễ dàng xác định và quản lý các tệp rác.
